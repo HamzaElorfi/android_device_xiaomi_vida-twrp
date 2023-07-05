@@ -1,8 +1,8 @@
 /boot               emmc      /dev/block/platform/bootdevice/by-name/boot             flags=slotselect;display="Boot";backup=1;flashimg=1
 /cust               ext4      /dev/block/platform/bootdevice/by-name/cust             flags=display="Cust"
-/cust_image         emmc      /dev/block/platform/bootdevice/by-name/cust             flags=display="Cust";backup=1;flashimg=1
-/dtbo               emmc      /dev/block/platform/bootdevice/by-name/dtbo             flags=display="DTBO";backup=1;flashimg=1
-/misc               emmc      /dev/block/platform/bootdevice/by-name/misc             flags=display="Misc";backup=1;flashimg=1
+/cust_image         emmc      /dev/block/platform/bootdevice/by-name/cust             flags=slotselect;display="Cust";backup=1;flashimg=1
+/dtbo               emmc      /dev/block/platform/bootdevice/by-name/dtbo             flags=slotselect;display="DTBO";backup=1;flashimg=1
+/misc               emmc      /dev/block/platform/bootdevice/by-name/misc             flags=slotselect;display="Misc";backup=1;flashimg=1
 /persist            ext4      /dev/block/platform/bootdevice/by-name/persist          flags=display="Persist";fsflags=ro
 /persist_image      emmc      /dev/block/platform/bootdevice/by-name/persist          flags=display="Persist";backup=1
 /protect_f          emmc      /dev/block/platform/bootdevice/by-name/protect1         flags=backup=1;display="protect_f"
@@ -11,10 +11,10 @@
 /nvdata             emmc      /dev/block/platform/bootdevice/by-name/nvdata           flags=backup=1;display="Nvdata"
 /nvcfg              emmc      /dev/block/platform/bootdevice/by-name/nvcfg            flags=backup=1;display="Nvcfg"
 /nvram              emmc      /dev/block/platform/bootdevice/by-name/nvram            flags=backup=1;display="Nvram"
-/vendor_boot        emmc      /dev/block/platform/bootdevice/by-name/vendor_boot      flags=display="Vendor Boot";flashimg=1
-/vbmeta             emmc      /dev/block/platform/bootdevice/by-name/vbmeta           flags=display="VBMeta";flashimg=1
-/vbmeta_vendor      emmc      /dev/block/platform/bootdevice/by-name/vbmeta_vendor    flags=slotselect;display="VBMeta Vendor";flashimg=1
-/vbmeta_system      emmc      /dev/block/platform/bootdevice/by-name/vbmeta_system    flags=slotselect;display="VBMeta System";flashimg=1
+/vendor_boot        emmc      /dev/block/platform/bootdevice/by-name/vendor_boot      flags=slotselect;display="Vendor_Boot";backup=1;flashimg=1
+/vbmeta             emmc      /dev/block/platform/bootdevice/by-name/vbmeta           flags=slotselect;display="VBMeta";backup=1;flashimg=1
+/vbmeta_vendor      emmc      /dev/block/platform/bootdevice/by-name/vbmeta_vendor    flags=slotselect;display="VBMeta_Vendor";backup=1;flashimg=1
+/vbmeta_system      emmc      /dev/block/platform/bootdevice/by-name/vbmeta_system    flags=slotselect;display="VBMeta_System";backup=1;flashimg=1
 
 /sdcard1            vfat      /dev/block/mmcblk0p1      /dev/block/mmcblk0            flags=display="MicroSD Card";storage;wipeingui;removable
 /usb_otg            vfat      /dev/block/sda1           /dev/block/sdd                flags=display="USB Storage";storage;wipeingui;removable
