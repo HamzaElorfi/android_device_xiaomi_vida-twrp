@@ -19,28 +19,6 @@
 LOCAL_PATH := device/xiaomi/vida
 
 # A/B
-AB_OTA_PARTITIONS += \
-    audio_dsp \
-    boot \
-    dtbo \
-    gz \
-    lk \
-    logo \
-    md1img \
-    pi_img \
-    preloader \
-    product \
-    scp \
-    spmfw \
-    sspm \
-    system \
-    tee \
-    vbmeta \
-    vbmeta_system \
-    vbmeta_vendor \
-    vendor \
-    vendor_boot
-
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
