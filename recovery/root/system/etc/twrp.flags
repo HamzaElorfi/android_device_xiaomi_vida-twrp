@@ -1,6 +1,6 @@
 /boot               emmc      /dev/block/platform/bootdevice/by-name/boot             flags=slotselect;display="Boot";backup=1;flashimg=1
 /dtbo               emmc      /dev/block/platform/bootdevice/by-name/dtbo             flags=slotselect;display="DTBO";backup=1;flashimg=1
-/misc               emmc      /dev/block/platform/bootdevice/by-name/misc             flags=slotselect;display="Misc";backup=1;flashimg=1
+/misc               emmc      /dev/block/platform/bootdevice/by-name/misc             flags=display="Misc"
 /persist            ext4      /dev/block/platform/bootdevice/by-name/persist          flags=display="Persist";fsflags=ro
 /persist_image      emmc      /dev/block/platform/bootdevice/by-name/persist          flags=display="Persist";backup=1
 /protect_f          emmc      /dev/block/platform/bootdevice/by-name/protect1         flags=backup=1;display="protect_f"
